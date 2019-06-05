@@ -7,6 +7,7 @@ php一般都做http方式请求了，可以使用get或post接收参数。当php
 
 1. 使用$argc和$argv接收
 ```
+<?php
 echo "接收到{$argc}个参数";
 print_r($argv);
 echo "\n";
@@ -25,6 +26,7 @@ edzdeMacBook-Air-4:html edz$ php test.php 222  333 444
 2. 使用getopt函数
 
 ```
+<?php
 $param_arr = getopt('a:b:');
 print_r($param_arr);
 echo "\n";
@@ -48,6 +50,7 @@ Array
 3. 提示用户输入
 
 ```
+<?php
 $fs = true;
 do{
         if($fs){
